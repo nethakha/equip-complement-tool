@@ -87,3 +87,9 @@ function Attribute(attr) {
     }
     return ret;
 }
+
+function copy() {
+    let t = document.getElementsByTagName("textarea")[0];
+    t.select();
+    document.execCommand("copy");
+}
