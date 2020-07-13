@@ -1,0 +1,29 @@
+
+body {
+    background: #fff;
+    width: 100%;
+}
+
+form div {
+    display: flex;
+    flex-flow: row nowrap;
+}
+form div input[type="text"] {
+    flex-grow: 1;
+}
+form div label {
+    display: inline-block;
+    flex-basis: 10em;
+    text-align: center;
+}
+
+form div label::after {
+    content: ":";
+    float: right;
+    padding-right: 1em;
+}
+
+
+textarea {
+    width: 100%;
+}

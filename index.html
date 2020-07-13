@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>web</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>equip complement tool</h1>
+        </header>
+        <p>GOD EATER 2 RAGE BURST Wiki*( <a href="https://wikiwiki.jp/godeater2rb/">https://wikiwiki.jp/godeater2rb/</a>
+            )の装備品項目補完用ツール</p>
+        <form name="f">
+            <div><label for="1">ネスト</label>
+                <input type="text" id="1" name="NEST"></div>
+            <div><label for="2">インデント</label>
+                <input type="text" id="2" name="INDENT_NUMBER"></div>
+            <div><label for="3">名称</label>
+                <input type="text" id="3" name="NAME"></div>
+            <div><label for="4">ランク</label>
+                <input type="text" id="4" name="RANK"></div>
+            <div><label for="5">破砕倍率</label>
+                <input type="text" id="5" name="CRUSH"></div>
+            <div><label for="6">貫通倍率</label>
+                <input type="text" id="6" name="PENET"></div>
+            <div><label for="7">火属性</label>
+                <input type="text" id="7" name="FIRE"></div>
+            <div><label for="8">氷属性</label>
+                <input type="text" id="8" name="ICE"></div>
+            <div><label for="9">雷属性</label>
+                <input type="text" id="9" name="SPARK"></div>
+            <div><label for="10">神属性</label>
+                <input type="text" id="10" name="GOD"></div>
+            <div><label for="11">スキル</label>
+                <input type="text" id="11" name="SKILL"></div>
+            <div><label for="12">合成fc 合成素材</label>
+                <input type="text" id="12" name="MAKE"></div>
+            <div><label for="13">強化fc 強化素材</label>
+                <input type="text" id="13" name="UPGRADE"></div>
+            <div><input type="button" name="dest" value="出力" onclick="put()"></div>
+        </form>
+        <textarea id="output" rows="6"></textarea>
+        <hr>
+        <h2>使い方</h2>
+        <p>ネストのパラメータには 「<b>I</b>」,「<b>L</b>」,「<b>T</b>」 の3つを使用可能です。罫線を挿入します。未記入可。</p>
+        <p>インデントには数値を入力します。数値分インデントを挿入します。(デフォルト0)</p>
+        <p>非物理属性のパラメータには 「<b>-2</b>」,「<b>-1</b>」,「<b>0</b>」,「<b>1</b>」,「<b>2</b>」の5つを使用可能です。(デフォルト0)</p>
+        <p>スキルや素材などの記入フォーマットはWikiの既存のページを参考にして記入してください。</p>
+    </body>
+
+</html>
