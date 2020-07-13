@@ -58,7 +58,7 @@ function put() {
     Info += MakeUp(Make, "合成");
     Info += MakeUp(Upgrade, "強化");
 
-
+    Info = Info.replace(/\t/g, "");
 
     document.getElementById("output").value = Info;
 
